@@ -16,7 +16,7 @@ export default function RegistroForm() {
   };
 
   const iniciarSesion = async () => {
-    const urlServer = "postgresql-jlserverdb.alwaysdata.net";
+    const urlServer = "soft-jobsbackend-production.up.railway.app";
     const endpoint = "/login";
     const { email, password } = usuario;
     try {
