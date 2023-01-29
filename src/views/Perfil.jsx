@@ -8,7 +8,7 @@ export default function Home() {
   const [usuario, setUsuarioLocal] = useState({});
 
   const getUsuarioData = async () => {
-    const urlServer = "soft-jobsbackend-production.up.railway.app";
+    const urlServer = "postgresql-jlserverdb.alwaysdata.net";
     const endpoint = "/usuarios";
     const token = localStorage.getItem("token");
 
@@ -27,7 +27,7 @@ export default function Home() {
 
   useEffect(() => {
     getUsuarioData();
-  }, []);
+  }, [])
 
   return (
     <div className="py-5">

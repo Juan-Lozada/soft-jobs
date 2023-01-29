@@ -5,7 +5,7 @@ export default function Form() {
 
     const registrarUsuario = async () => {
         try {
-            await axios.post("soft-jobsbackend-production.up.railway.app/usuarios", {usuario})
+            await axios.post("postgresql-jlserverdb.alwaysdata.net/usuarios", {usuario})
             alert("Usuario agregado con éxito")
         } catch (error) {
             alert("Algo salió mal")
