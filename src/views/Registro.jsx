@@ -13,7 +13,7 @@ export default function RegistroForm() {
   };
 
   const registrarUsuario = async () => {
-    const urlServer = "http://localhost:3000";
+    const urlServer = "soft-jobsbackend-production.up.railway.app";
     const endpoint = "/usuarios";
     try {
       await axios.post(urlServer + endpoint, usuario);
