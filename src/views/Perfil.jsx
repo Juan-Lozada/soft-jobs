@@ -18,12 +18,9 @@ export default function Home() {
       });
       setUsuarioGlobal(data);
       setUsuarioLocal(data);
-
+      
     } catch ({ response: { data: message } }) {
-      Swal.fire({
-        icon: 'error',
-        title: `${message} 🙁`
-      });
+      alert(message + " 🙁");
       console.log(message);
     }
   };
