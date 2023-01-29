@@ -18,8 +18,12 @@ export default function Home() {
       });
       setUsuarioGlobal(data);
       setUsuarioLocal(data);
+
     } catch ({ response: { data: message } }) {
-      alert(message + " 🙁");
+      Swal.fire({
+        icon: 'error',
+        title: `${message} 🙁`
+      });
       console.log(message);
     }
   };
